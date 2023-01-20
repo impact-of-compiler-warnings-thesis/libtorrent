@@ -19,7 +19,7 @@ jobs:
         uses: SonarSource/sonarcloud-github-c-cpp@v1
       - name: Run build-wrapper
         run: |
-          sudo apt install ninja-build
+          sudo apt install ninja-build libboost*
           mkdir build
           cd build
           cmake .. -GNinja -DCMAKE_BUILD_TYPE=Debug
